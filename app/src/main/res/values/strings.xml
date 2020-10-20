@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Contactos</string>
+    <string name="et_nombre">Nombre Completo</string>
+    <string name="et_telefono">Telefono</string>
+    <string name="et_email">Email</string>
+    <string name="et_descripcion">Descripción Del Contacto</string>
+    <string name="tv_Fecha">Seleccione La Fecha</string>
+    <string name="texto_boton_click">Registrar</string>
+    <string name="texto_boton_editar">Editar</string>
+    <string name="tv_confirmar">Confirmar Datos</string>
+
+
+</resources>

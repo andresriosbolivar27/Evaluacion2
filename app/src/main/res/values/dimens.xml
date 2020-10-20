@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margen_izq_der">15dp</dimen>
+    <dimen name="tamaño_letra">15dp</dimen>
+</resources>

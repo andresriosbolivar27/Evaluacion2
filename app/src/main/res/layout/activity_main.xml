@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNombre"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margen_izq_der"
+        android:layout_marginRight="@dimen/margen_izq_der">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:hint="@string/et_nombre"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilNombre"
+        android:layout_marginTop="23dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tv_Fecha"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"/>
+
+    <DatePicker
+        android:id="@+id/dtpFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:layout_below="@id/tvFecha">
+
+    </DatePicker>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFecha"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margen_izq_der"
+        android:layout_marginRight="@dimen/margen_izq_der"
+        android:layout_below="@id/dtpFecha">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:hint="@string/tv_Fecha"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTelefono"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margen_izq_der"
+        android:layout_marginRight="@dimen/margen_izq_der"
+        android:layout_below="@id/tilFecha">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:hint="@string/et_telefono"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margen_izq_der"
+        android:layout_marginRight="@dimen/margen_izq_der"
+        android:layout_below="@id/tilTelefono">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:hint="@string/et_email"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDescripcion"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margen_izq_der"
+        android:layout_marginRight="@dimen/margen_izq_der"
+        android:layout_below="@id/tilEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:hint="@string/et_descripcion"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnMiBoton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilDescripcion"
+        android:text="@string/texto_boton_click"
+        android:theme="@style/MiBotonRaised"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/margen_izq_der"
+        android:layout_marginRight="@dimen/margen_izq_der"/>
+
+</RelativeLayout>
