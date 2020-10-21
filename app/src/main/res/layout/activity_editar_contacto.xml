@@ -13,6 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="120dp"
         android:text="@string/tv_confirmar"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20dp"/>
@@ -26,7 +28,7 @@
             android:id="@+id/tvNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tv_confirmar"
+            android:text="@string/et_nombre"
             android:textSize="@dimen/tamaño_letra"
             android:layout_below="@id/tvConfirmar"
             android:textStyle="bold"
@@ -164,7 +166,7 @@
         android:layout_marginBottom="@dimen/margen_izq_der"/>
 
     <Button
-        android:id="@+id/btnMiBoton"
+        android:id="@+id/btnEditar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvDescripcion"
